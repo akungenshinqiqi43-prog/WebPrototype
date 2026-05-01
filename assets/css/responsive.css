@@ -1,0 +1,129 @@
+@media (max-width: 980px) {
+  .navbar {
+    flex-wrap: wrap;
+    border-radius: 32px;
+  }
+
+  .nav-links {
+    width: 100%;
+    order: 3;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+  }
+
+  .nav-actions > .btn {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: inline-grid;
+    place-items: center;
+  }
+
+  .navbar[data-mobile-nav-ready="true"] .nav-links {
+    display: none;
+    padding: 12px 4px 4px;
+    margin-top: 4px;
+    border-top: 1px solid rgba(31, 111, 74, 0.08);
+  }
+
+  .navbar[data-mobile-nav-ready="true"].is-open .nav-links {
+    display: grid;
+  }
+
+  .navbar[data-mobile-nav-ready="true"].is-open .nav-links a {
+    padding: 12px 14px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.74);
+    box-shadow: 0 10px 24px rgba(80, 30, 55, 0.05);
+  }
+
+  .hero-grid,
+  .taste-grid,
+  .faq-grid,
+  .cta-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 62px;
+  }
+
+  .hero-visual {
+    min-height: 500px;
+  }
+
+  .benefit-grid,
+  .audience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ingredient-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .page-shell {
+    width: min(100% - 22px, 1180px);
+  }
+
+  .navbar {
+    border-radius: 24px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .hero-copy {
+    font-size: 16px;
+  }
+
+  .cta-row,
+  .cta-row .btn {
+    width: 100%;
+  }
+
+  .hero-product-frame {
+    padding: 12px;
+    border-radius: 28px;
+  }
+
+  .hero-product-main {
+    border-radius: 22px;
+  }
+
+  .hero-product-fallback {
+    min-height: 360px;
+  }
+
+  .benefit-grid,
+  .ingredient-grid,
+  .audience-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits,
+  .ingredients,
+  .taste,
+  .audience,
+  .faq {
+    padding: 58px 0;
+  }
+
+  .cta-panel {
+    padding: 34px 24px;
+    border-radius: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
