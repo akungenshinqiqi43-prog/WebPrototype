@@ -224,7 +224,7 @@ function initAnimations() {
     return;
   }
 
-  window.gsap.utils.toArray(".benefit-card, .ingredient-card, .audience-card, .faq-item").forEach((element) => {
+  window.gsap.utils.toArray(".benefit-card, .ingredient-card, .ingredient-story-card, .audience-card, .faq-item").forEach((element) => {
     window.gsap.from(element, {
       scrollTrigger: {
         trigger: element,
@@ -261,6 +261,7 @@ function initAnimations() {
     duration: 0.82,
     ease: "power3.out"
   });
+
 }
 
 document.addEventListener("DOMContentLoaded", () => {
